@@ -13,8 +13,8 @@ public class Main {
     static Logger logger = Logger.getLogger(CheckCertificate.class.getName());
     public static void main(String[] args) throws CertificateException, DecoderException, IOException {
     CheckCertificate c =new CheckCertificate();
-        String path = "C:\\Users\\ASUS\\Downloads\\g2g_mofa_gov_sa";  // Path where the certificates are located.
-       
+        String path = "C:\\Users\\ASUS\\Downloads\\";  // Path where the certificates are located.
+
         File folder = new File(path);
         File[] listOfFiles = folder.listFiles();
         logger.info("No of Certificates = " + listOfFiles.length);
